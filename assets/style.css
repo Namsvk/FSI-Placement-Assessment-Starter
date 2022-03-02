@@ -31,16 +31,16 @@ section .listType {
   border-radius: 18px;
 }
 button {
-    background-color: #724848; /* Green */
-    border: none;
-    border-radius: 18px;
-    color: white;
-    padding:12px 28px;
-    text-align: center;
-    text-decoration:solid
-    display: inline-block;
-    font-size: 24px;
-  }
+  background-color: #724848; /* Green */
+  border: none;
+  border-radius: 18px;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: solid;
+  display: inline-block;
+  font-size: 24px;
+}
 /* Text Styles */
 h1 {
   color: aquamarine;
@@ -82,26 +82,34 @@ body::after {
   float: left;
 }
 
-#rightDiv{float: right;}
+#rightDiv {
+  float: right;
+}
 
-
-
-li{
-  color:aqua;
+li {
+  color: aqua;
   margin: 4px;
   text-align: left;
-  padding : 5px;
-  font-size:x-large;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
+  padding: 5px;
+  font-size: x-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 ul {
   text-align: left;
   padding: 10px;
-  font-size:xx-large;
+  font-size: xx-large;
   font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    padding:12px 28px;
+  color: white;
+  padding: 12px 28px;
 }
 
+ol {
+  text-align: left;
+  padding: 10px;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 12px 28px;
+}
