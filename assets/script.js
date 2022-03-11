@@ -3,7 +3,7 @@ var uditNarayan= ["Pal Pal Soch Mein Aana Na","Tujhko na Dekhun Toh","Pyar ki Ka
 var abhijeet = ["Tumhe Jo Maine Dekha","Pyar Ke Kagaz Pe Dil Ki Kalam","Badi Mushkil Hai Khoya Mera Dil Hai","Hum Nahin Tere Dushmano Mein","Ole Ole"]
 
 var kumarSanu = ["Is Tarah Ashique ka","Mera Chand Mujhe Aaya Nazar","Jab se Mein Tujhse Mila Hoon",
-"Humko Tumse Pyar Hai","Kitna Pyar Tumhe Karte Hai","Pucho Zara Pucho","Kitni Kasrat Hai Humein","Mere Khwaabon Mein Tu"]
+"Humko Tumse Pyar Hai","Kitna Pyar Tumhe Karte Hai","Pucho Zara Pucho","Kitni Kasrat Hai Humein","Mere Khwaabon Mein Tu","Dil Deewana Dhoondta Hai"]
 
 var sonuNigam = ["Jal Jal Ke Dhuan","Ishq Hai Kya","Dard","Chain Ho Chain Ho Mere Dil Ka","Apnaa Mujhe Tu Lagaa","Dil Mein Jo Baat"]
 
@@ -26,6 +26,14 @@ var tauseef = ["Chand Taare Phool Shabnam"]
 
 var kk = ["Abhi Abhi Tho Mile Ho","Labon Ko","Dil Ibadat"]
 
+var funnySongs = ["Stop That","Loveria","Kusu Kusu","Sharara Sharara","Ek Do Teen Male","Ranu Ranu Telugu","Tu Isaq Mera","Taiyabali Pyar Ka Dushman","Bade Kaam Ka Bandar","Mere Angne Mein Tumhara Kya Kaam Hai","Oo Antava","Daiya Daiya Re","Laila Mein Laila","Yamma Yamma"]
+
+var vinodRathor =["Romeo Naam Mera"]
+
+var oldSongs =["Neele Neele Ambar Par","O mere Dil ki Chain","Masti Bhara hai Sama"]
+
+
+
 
 var uploadedTracks = ["Aila re Aila Sooryavanshi MMB","Medley Mujhse Dosti Karoge MMB","Kishore Kumar Medley MMB","Tere Bina MMB","Ladki Pataya MMB",
 "Raatan Lambiyan MMB","hum Rahe Ya Na Rahe Indian Idol MMB","Jubin Nautiyal Medley MMB","Urvashi Urvashi MMB","Aap Ki Khatir MMB","M Bole Toh MBBS MMB","Khairiyat MMB","Kumar Sanu Medley MMB",
@@ -34,7 +42,8 @@ var uploadedTracks = ["Aila re Aila Sooryavanshi MMB","Medley Mujhse Dosti Karog
 
 var ownTracks =["Oo Bolega male version - Pushpa","Why this Makkikirkiri - Kolavari Di","Khairiyat Pucho - GF ko Looto","Kabhi KHushi Kabhie Gham - SM Guests Song",
 "Phir Bhi Dil Hai Hindustani - SM Admins Song","Zara Zara Bhooki GF","THE KHUJLI SONG","Srivalli Bhooki","SM PER LUTGAYE - SONG ON BIG LEVEL ID'S",
-"My Haleema is My ATM","PATI-PATNI AUR WFH","CHAAT LOVERS SONG CLEAR","BOHATH KUCH HOTA HAI","BOX LUTERA-GIFTER SONG","DP KA DHOKA","BAKK BAKK GF","BROADCASTER CRUSH","SONG ON SM WIFE'S"]
+"My Haleema is My ATM","PATI-PATNI AUR WFH","CHAAT LOVERS SONG CLEAR","BOHATH KUCH HOTA HAI","BOX LUTERA-GIFTER SONG","DP KA DHOKA","BAKK BAKK GF","BROADCASTER CRUSH","SONG ON SM WIFE'S","GHAR DAMAAD - Aaj Kal Tere Mere Pyar","SHAADI KA KHAANA - Roop Tera Mastana"]
+
 
 //SELECTING THE ELEMENT BUTTON FOR PLAYLIST
 let playListBtn = document.querySelector(".check")
@@ -42,6 +51,10 @@ let playListBtn = document.querySelector(".check")
 let uploadedTracksBtn = document.querySelector(".uploaded")
 //SELECTING THE ELEMENT BUTTON FOR LYRICIST SONGS
 let ownTracksBtn = document.querySelector(".ownLyrics")
+//SELECTING THE ELEMENT BUTTON FOR FUN SONGS
+let funBtn = document.querySelector(".fun")
+// SELECTING THE ELEMENT BUTTON FOR OLD SONGS
+let oldBtn = document.querySelector(".old")
 
 
 
@@ -99,6 +112,62 @@ ownTracksBtn.addEventListener('click', function(){
 
 } )
 
+// CLICK EVENT ON FUN SONGS
+funBtn.addEventListener('click', function(){
+
+    //SELECTING ELEMENT h2 TO DISPLAY THE BUTTON SELECTED
+    let typeOfCat = document.getElementById("typeOfBtn");
+    typeOfCat.textContent ="FUN & ENTERTAINING SONGS";
+
+    //SELECTING THE ELEMENT LEFTDIV & RIGHTDIV
+    let leftDiv = document.getElementById("leftDiv")
+    let rightDiv = document.getElementById("rightDiv")
+    leftDiv.textContent="";
+    rightDiv.textContent="";
+
+        // CREATING ELEMENT UL FOR FUNNY SONGS
+        let funnySongsList = document.createElement("ul");
+            funnySongs.forEach((item)=>{
+                let li=document.createElement("li");
+                li.innerText= item;
+                funnySongsList.appendChild(li);
+            }) 
+        //APPENDING UL TO RIGHT DIV        
+        leftDiv.append(funnySongsList);
+
+    
+
+
+} )
+
+// CLICK EVENT ON OLD SONGS
+oldBtn.addEventListener('click', function(){
+
+    //SELECTING ELEMENT h2 TO DISPLAY THE BUTTON SELECTED
+    let typeOfCat = document.getElementById("typeOfBtn");
+    typeOfCat.textContent ="OLD SONGS";
+
+    //SELECTING THE ELEMENT LEFTDIV & RIGHTDIV
+    let leftDiv = document.getElementById("leftDiv")
+    let rightDiv = document.getElementById("rightDiv")
+    leftDiv.textContent="";
+    rightDiv.textContent="";
+
+        // CREATING ELEMENT UL FOR OLD SONGS
+        let oldSongsList = document.createElement("ul");
+            oldSongs.forEach((item)=>{
+                let li=document.createElement("li");
+                li.innerText= item;
+                oldSongsList.appendChild(li);
+            }) 
+        //APPENDING UL TO RIGHT DIV        
+        leftDiv.append(oldSongsList);
+
+    
+
+
+} )
+
 
 
 // CLICK EVENT ON PLAYLIST BUTTON
@@ -148,10 +217,9 @@ playListBtn.addEventListener('click' , function(){
             kumarSanuList.appendChild(li);
         }) 
     //APPENDING UL TO LEFT DIV        
-    rightDiv.append(kumarSanuList);
+    leftDiv.append(kumarSanuList);
 
     //4. CREATING ELEMENT UL FOR SONU NIGAM
-
     let sonuNigamList = document.createElement("ul");
     sonuNigamList.textContent = "SONU NIGAM : ";
         sonuNigam.forEach((item)=>{
@@ -160,10 +228,9 @@ playListBtn.addEventListener('click' , function(){
             sonuNigamList.appendChild(li);
         }) 
     //APPENDING UL TO LEFT DIV        
-    rightDiv.append(sonuNigamList);
+    leftDiv.append(sonuNigamList);
 
     //5. CREATING ELEMENT UL FOR ARIJIT SINGH
-
     let arijitSinghList = document.createElement("ul");
     arijitSinghList.textContent = "ARIJIT SINGH : ";
         arijitSingh.forEach((item)=>{
@@ -172,10 +239,9 @@ playListBtn.addEventListener('click' , function(){
             arijitSinghList.appendChild(li);
         }) 
     //APPENDING UL TO LEFT DIV        
-    rightDiv.append(arijitSinghList);
+    leftDiv.append(arijitSinghList);
 
     //6. CREATING ELEMENT UL FOR JUBIN NAUTIYAL
-
     let jubinNautiyalList = document.createElement("ul");
     jubinNautiyalList.textContent = "JUBIN NAUTIYAL : ";
         jubinNautiyal.forEach((item)=>{
@@ -183,11 +249,10 @@ playListBtn.addEventListener('click' , function(){
             li.innerText= item;
             jubinNautiyalList.appendChild(li);
         }) 
-    //APPENDING UL TO LEFT DIV        
-    leftDiv.append(jubinNautiyalList);
+    //APPENDING UL TO RIGHT DIV        
+    rightDiv.append(jubinNautiyalList);
 
     //7. CREATING ELEMENT UL FOR ARMAN MALIK
-
     let armanMalikList = document.createElement("ul");
     armanMalikList.textContent = "ARMAN MALIK : ";
         armanMalik.forEach((item)=>{
@@ -195,9 +260,88 @@ playListBtn.addEventListener('click' , function(){
             li.innerText= item;
             armanMalikList.appendChild(li);
         }) 
+    //APPENDING UL TO RIGHT DIV        
+    rightDiv.append(armanMalikList);
+
+    //8. CREATING ELEMENT UL FOR BENNY DAYAL
+    let bennyDayalList = document.createElement("ul");
+    bennyDayalList.textContent = "BENNY DAYAL : ";
+        bennyDayal.forEach((item)=>{
+            let li=document.createElement("li");
+            li.innerText= item;
+            bennyDayalList.appendChild(li);
+        }) 
     //APPENDING UL TO LEFT DIV        
-    leftDiv.append(armanMalikList);
+    rightDiv.append(bennyDayalList);
+
+    //9. CREATING ELEMENT UL FOR BABUL SUPRIYO
+    let babulSupriyoList = document.createElement("ul");
+    babulSupriyoList.textContent = "BABUL SUPRIYO : ";
+        babulSupriyo.forEach((item)=>{
+            let li=document.createElement("li");
+            li.innerText= item;
+            babulSupriyoList.appendChild(li);
+        }) 
+    //APPENDING UL TO LEFT DIV        
+    rightDiv.append(babulSupriyoList);
     
+
+    //10. CREATING ELEMENT UL FOR SAYEED QUADRI
+    let sayeedQuadriList = document.createElement("ul");
+    sayeedQuadriList.textContent = "SAYEED QUADRI : ";
+        sayeedQuadri.forEach((item)=>{
+            let li=document.createElement("li");
+            li.innerText= item;
+            sayeedQuadriList.appendChild(li);
+        }) 
+    //APPENDING UL TO LEFT DIV        
+    rightDiv.append(sayeedQuadriList);
+
+    //11. CREATING ELEMENT UL FOR ADNAN SAMI
+    let adnanSamiList = document.createElement("ul");
+    adnanSamiList.textContent = "ADNAN SAMI: ";
+        adnanSami.forEach((item)=>{
+            let li=document.createElement("li");
+            li.innerText= item;
+            adnanSamiList.appendChild(li);
+        }) 
+    //APPENDING UL TO LEFT DIV        
+    rightDiv.append(adnanSamiList);
+
+    //12. CREATING ELEMENT UL FOR TAUSEEF
+    let tauseefList = document.createElement("ul");
+    tauseefList.textContent = "TAUSEEF: ";
+        tauseef.forEach((item)=>{
+            let li=document.createElement("li");
+            li.innerText= item;
+            tauseefList.appendChild(li);
+        }) 
+    //APPENDING UL TO LEFT DIV        
+    rightDiv.append(tauseefList);
+
+    //13. CREATING ELEMENT UL FOR KK
+    let kkList = document.createElement("ul");
+    kkList.textContent = "KK : ";
+        kk.forEach((item)=>{
+            let li=document.createElement("li");
+            li.innerText= item;
+            kkList.appendChild(li);
+        }) 
+    //APPENDING UL TO RIGHT DIV        
+    rightDiv.append(kkList);
+
+    //14. CREATING ELEMENT UL FOR VINOD RATHOR
+    let vinodRathorList = document.createElement("ul");
+    vinodRathorList.textContent = "VINOD RATHOR : ";
+        vinodRathor.forEach((item)=>{
+            let li=document.createElement("li");
+            li.innerText= item;
+            vinodRathorList.appendChild(li);
+        }) 
+    //APPENDING UL TO RIGHT DIV        
+    rightDiv.append(vinodRathorList);
+
+
         
         
  
