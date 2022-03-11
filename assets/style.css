@@ -26,9 +26,9 @@ main {
 section .listType {
   display: inline-block;
   border: 1px solid saddlebrown;
-  padding: 10px;
+  padding: 8px;
   background-color: rgb(14, 9, 3);
-  border-radius: 18px;
+  border-radius: 15px;
 }
 button {
   background-color: #724848; /* Green */

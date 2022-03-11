@@ -34,7 +34,7 @@ var uploadedTracks = ["Aila re Aila Sooryavanshi MMB","Medley Mujhse Dosti Karog
 
 var ownTracks =["Oo Bolega male version - Pushpa","Why this Makkikirkiri - Kolavari Di","Khairiyat Pucho - GF ko Looto","Kabhi KHushi Kabhie Gham - SM Guests Song",
 "Phir Bhi Dil Hai Hindustani - SM Admins Song","Zara Zara Bhooki GF","THE KHUJLI SONG","Srivalli Bhooki","SM PER LUTGAYE - SONG ON BIG LEVEL ID'S",
-"My Haleema is My ATM","PATI-PATNI AUR WFH","CHAAT LOVERS SONG CLEAR","BOHATH KUCH HOTA HAI","BOX LUTERA-GIFTER SONG"]
+"My Haleema is My ATM","PATI-PATNI AUR WFH","CHAAT LOVERS SONG CLEAR","BOHATH KUCH HOTA HAI","BOX LUTERA-GIFTER SONG","DP KA DHOKA","BAKK BAKK GF","BROADCASTER CRUSH","SONG ON SM WIFE'S"]
 
 //SELECTING THE ELEMENT BUTTON FOR PLAYLIST
 let playListBtn = document.querySelector(".check")
@@ -127,7 +127,7 @@ playListBtn.addEventListener('click' , function(){
 
     //2. CREATING ELEMENT UL FOR ABHIJEET BHATTACHARYA        
     let abhijeetList = document.createElement("ul");
-    abhijeetList.textContent = "ABHIJEET BHATTACHARYA :";
+    abhijeetList.textContent = "ABHIJEET BHATTACHARYA:";
             abhijeet.forEach((item)=>{
                 console.log("abhijeet begin")
                 let li= document.createElement("li");
