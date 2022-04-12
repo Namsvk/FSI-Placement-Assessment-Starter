@@ -26,11 +26,12 @@ var tauseef = ["Chand Taare Phool Shabnam"]
 
 var kk = ["Abhi Abhi Tho Mile Ho","Labon Ko","Dil Ibadat"]
 
-var funnySongs = ["Stop That","Loveria","Kusu Kusu","Sharara Sharara","Ek Do Teen Male","Ranu Ranu Telugu","Tu Isaq Mera","Taiyabali Pyar Ka Dushman","Bade Kaam Ka Bandar","Mere Angne Mein Tumhara Kya Kaam Hai","Oo Antava","Daiya Daiya Re","Laila Mein Laila","Yamma Yamma"]
+var funnySongs = ["Stop That","Loveria","Kusu Kusu","Sharara Sharara","Ek Do Teen Male","Ranu Ranu Telugu","Tu Isaq Mera","Taiyabali Pyar Ka Dushman","Bade Kaam Ka Bandar","Mere Angne Mein Tumhara Kya Kaam Hai","Oo Antava","Daiya Daiya Re","Laila Mein Laila","Yamma Yamma",
+"Romeo Naam Mera","Aadat Se Majboor","Batamiz Dil","Dus Bahane"]
 
 var vinodRathor =["Romeo Naam Mera"]
 
-var oldSongs =["Neele Neele Ambar Par","O mere Dil ki Chain","Masti Bhara hai Sama"]
+var oldSongs =["Neele Neele Ambar Par","O mere Dil ki Chain","Masti Bhara hai Sama","Meri Mehboob Khayamat Hogi"]
 
 
 
