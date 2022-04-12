@@ -38,11 +38,13 @@ var oldSongs =["Neele Neele Ambar Par","O mere Dil ki Chain","Masti Bhara hai Sa
 var uploadedTracks = ["Aila re Aila Sooryavanshi MMB","Medley Mujhse Dosti Karoge MMB","Kishore Kumar Medley MMB","Tere Bina MMB","Ladki Pataya MMB",
 "Raatan Lambiyan MMB","hum Rahe Ya Na Rahe Indian Idol MMB","Jubin Nautiyal Medley MMB","Urvashi Urvashi MMB","Aap Ki Khatir MMB","M Bole Toh MBBS MMB","Khairiyat MMB","Kumar Sanu Medley MMB",
 "Mr India Parody MMB","Woh Teri Yaadein Woh Teri Baatein MMB","Saagar Jaisi Aankho Waali-UNWIND","Tumse Bhi Zyada","Dil Lootne Wale Jadugar - Suhane Pal","Dilbar Mere - The Unwind Mix",
-"Pyar Manga Hai Tumhi Se - The Unwind Mix","MASTI BHARA HAI SAMA - SUHANE PAL","DIL KYA KARE - THE UNWIND MIX","The Unwind Mix Mashup-1","Saaton Janam Tujhko Paate"]
+"Pyar Manga Hai Tumhi Se - The Unwind Mix","MASTI BHARA HAI SAMA - SUHANE PAL","DIL KYA KARE - THE UNWIND MIX","The Unwind Mix Mashup-1","Saaton Janam Tujhko Paate","Jaan Hai Meri HD - Radhe Shyam","Nacho Nacho HD - RRR","Hawaon Ne Yeh Kaha HD",
+"Madiney Diyaan Pak Galiyaan - IMRAN ABBAS","Ya Muhammad Noor E Mujassam - IMRAN ABBAS"]
 
 var ownTracks =["Oo Bolega male version - Pushpa","Why this Makkikirkiri - Kolavari Di","Khairiyat Pucho - GF ko Looto","Kabhi KHushi Kabhie Gham - SM Guests Song",
 "Phir Bhi Dil Hai Hindustani - SM Admins Song","Zara Zara Bhooki GF","THE KHUJLI SONG","Srivalli Bhooki","SM PER LUTGAYE - SONG ON BIG LEVEL ID'S",
-"My Haleema is My ATM","PATI-PATNI AUR WFH","CHAAT LOVERS SONG CLEAR","BOHATH KUCH HOTA HAI","BOX LUTERA-GIFTER SONG","DP KA DHOKA","BAKK BAKK GF","BROADCASTER CRUSH","SONG ON SM WIFE'S","GHAR DAMAAD - Aaj Kal Tere Mere Pyar","SHAADI KA KHAANA - Roop Tera Mastana"]
+"My Haleema is My ATM","PATI-PATNI AUR WFH","CHAAT LOVERS SONG CLEAR","BOHATH KUCH HOTA HAI","BOX LUTERA-GIFTER SONG","DP KA DHOKA","BAKK BAKK GF","BROADCASTER CRUSH","SONG ON SM WIFE'S","GHAR DAMAAD - Aaj Kal Tere Mere Pyar","SHAADI KA KHAANA - Roop Tera Mastana",
+"FAIRNESS CREAM - Chup Gaye Sare Nazare","GIFTER JI GIFTER JIJAANA NAHI - PARDESI PARDESI JAANA NAHI","UDHAAR MAANGNE WAALA DOST - Pyar Maanga Hai Tumhi se","SAR MAI JUAN HONGE - Jab Hum Jawan Honge"]
 
 
 //SELECTING THE ELEMENT BUTTON FOR PLAYLIST
